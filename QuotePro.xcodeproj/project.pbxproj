@@ -12,6 +12,9 @@
 		01BD4DE81FB3997500A67DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BD4DE61FB3997500A67DCD /* Main.storyboard */; };
 		01BD4DEA1FB3997500A67DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BD4DE91FB3997500A67DCD /* Assets.xcassets */; };
 		01BD4DED1FB3997500A67DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BD4DEB1FB3997500A67DCD /* LaunchScreen.storyboard */; };
+		01BD4E1D1FB3EA9B00A67DCD /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD4E1C1FB3EA9B00A67DCD /* RealmObjects.swift */; };
+		01BD4E1F1FB403DB00A67DCD /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD4E1E1FB403DB00A67DCD /* QuoteView.swift */; };
+		01BD4E211FB403E800A67DCD /* QuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01BD4E201FB403E700A67DCD /* QuoteView.xib */; };
 		BC437E90C8A6E491561D6539 /* Pods_QuotePro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB33CD54F29093F66EFB7473 /* Pods_QuotePro.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 		01BD4DE91FB3997500A67DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01BD4DEC1FB3997500A67DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01BD4DEE1FB3997500A67DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BD4E1C1FB3EA9B00A67DCD /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
+		01BD4E1E1FB403DB00A67DCD /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		01BD4E201FB403E700A67DCD /* QuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteView.xib; sourceTree = "<group>"; };
 		AB33CD54F29093F66EFB7473 /* Pods_QuotePro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotePro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF51379062F0DBDEBE6A2FFE /* Pods-QuotePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotePro.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro.release.xcconfig"; sourceTree = "<group>"; };
 		E8204EFE05E4F3AD12C28932 /* Pods-QuotePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotePro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 			children = (
 				01BD4DE21FB3997500A67DCD /* AppDelegate.swift */,
 				01BD4DE41FB3997500A67DCD /* ViewController.swift */,
+				01BD4E1C1FB3EA9B00A67DCD /* RealmObjects.swift */,
+				01BD4E1E1FB403DB00A67DCD /* QuoteView.swift */,
+				01BD4E201FB403E700A67DCD /* QuoteView.xib */,
 				01BD4DE61FB3997500A67DCD /* Main.storyboard */,
 				01BD4DE91FB3997500A67DCD /* Assets.xcassets */,
 				01BD4DEB1FB3997500A67DCD /* LaunchScreen.storyboard */,
@@ -153,6 +162,7 @@
 				01BD4DED1FB3997500A67DCD /* LaunchScreen.storyboard in Resources */,
 				01BD4DEA1FB3997500A67DCD /* Assets.xcassets in Resources */,
 				01BD4DE81FB3997500A67DCD /* Main.storyboard in Resources */,
+				01BD4E211FB403E800A67DCD /* QuoteView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,8 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01BD4E1D1FB3EA9B00A67DCD /* RealmObjects.swift in Sources */,
 				01BD4DE51FB3997500A67DCD /* ViewController.swift in Sources */,
 				01BD4DE31FB3997500A67DCD /* AppDelegate.swift in Sources */,
+				01BD4E1F1FB403DB00A67DCD /* QuoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
