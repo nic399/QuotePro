@@ -13,6 +13,9 @@ import RealmSwift
 class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var quoteLabel: UILabel!
     let realm = try! Realm()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +24,9 @@ class ViewController: UIViewController {
         quote.author = "Me"
         quote.quoteText = "FML"
         
+        let imageData = try! Data.init(contentsOf: URL(string: "https://lorempixel.com/400/200/")!)
+        quote.photoData = imageData
 
-        
         try! self.realm.write {
             self.realm.add(quote)
         }
@@ -51,7 +55,26 @@ class ViewController: UIViewController {
                         }
                         let quoteText = json["quoteText"] as! String
                         let quoteAuthor = json["quoteAuthor"] as! String
+                        let imageData = try! Data.init(contentsOf: URL(string: "https://lorempixel.com/400/200/")!)
+                        let quote = Quote()
+                        if quoteAuthor.isEmpty {
+                            quote.author = "Unknown"
+                        }
+                        else {
+                            quote.author = quoteAuthor
+                        }
+                        quote.quoteText = quoteText
+                        quote.photoData = imageData
                         print("Quote: \(quoteText) ~By: \(quoteAuthor)")
+
+                        DispatchQueue.main.async {
+                            try! self.realm.write {
+                                self.realm.add(quote)
+                            }
+                            self.imageView.image = UIImage(data: quote.photoData!)
+                            self.authorLabel.text = quote.author
+                            self.quoteLabel.text = quote.quoteText
+                        }
                         
                     }
                 }
