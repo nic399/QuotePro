@@ -56,7 +56,7 @@ class ViewController: UIViewController {
                         }
                         let quoteText = json["quoteText"] as! String
                         let quoteAuthor = json["quoteAuthor"] as! String
-                        let imageData = try! Data.init(contentsOf: URL(string: "https://lorempixel.com/400/200/")!)
+                        let imageData = try! Data.init(contentsOf: URL(string: "https://lorempixel.com/300/400/")!)
                         let quote = Quote()
                         if quoteAuthor.isEmpty {
                             quote.author = "Unknown"

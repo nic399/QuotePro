@@ -14,6 +14,11 @@ class Quote: Object {
     @objc dynamic var quoteText:String = ""
     @objc dynamic var author:String = ""
     @objc dynamic var photoData:Data? = nil
+    @objc dynamic var quoteID:String = UUID().uuidString
+    
+    override static func primaryKey() -> String {
+        return "quoteID"
+    }
 }
 
 

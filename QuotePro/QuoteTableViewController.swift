@@ -22,7 +22,13 @@ class QuoteTableViewController: UIViewController, UITableViewDelegate, UITableVi
         quotes = self.realm.objects(Quote.self)
         myTableView.delegate = self
         myTableView.dataSource = self
+        myTableView.allowsMultipleSelection = false
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,14 +58,30 @@ class QuoteTableViewController: UIViewController, UITableViewDelegate, UITableVi
         return 1
     }
     
-    /*
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "toDetail", sender: self)
+    }
+    
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "toDetail" {
+            let desination = segue.destination as? NewQuoteViewController
+            let selectedQuote = quotes[(myTableView.indexPathForSelectedRow?.row)!]
+            print("Original Quote: \(selectedQuote)")
+            print("primary key to be passed <\(selectedQuote.quoteID)>")
+            let myQuoteID = selectedQuote.quoteID
+            let retrievedQuote = realm.object(ofType: Quote.self, forPrimaryKey: myQuoteID)
+            print("Retrieved Quote: \(retrievedQuote)")
+            desination?.dataQuoteID = selectedQuote.quoteID
+            print("\(desination?.dataQuoteID)")
+            print("Number of item in realm (on tableview): \(self.quotes.count)")
+        }
     }
-    */
+    
 
 }

@@ -68,6 +68,7 @@ class QuoteView: UIView {
         quoteLabel.text = quoteText
         authorLabel.text = quoteAuthor
         backgroundImageView.image = backgroundImage
+        print("quote: \(quoteText)\nauthor: \(quoteAuthor)\n")
     }
     
     private func commonInit() {
@@ -75,6 +76,7 @@ class QuoteView: UIView {
         setupView()
     }
     private func setupFromXib() {
+        print("setting up from xib")
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: "QuoteView", bundle: bundle)
         guard let view = nib.instantiate(withOwner: self, options: nil)[0] as? UIView else {
