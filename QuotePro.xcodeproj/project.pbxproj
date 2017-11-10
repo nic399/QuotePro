@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01BBB0851FB543B900A31DF5 /* NewQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB0841FB543B900A31DF5 /* NewQuoteViewController.swift */; };
 		01BBB0871FB54CF900A31DF5 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB0861FB54CF900A31DF5 /* APIServices.swift */; };
+		01BBB0891FB5576C00A31DF5 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BBB0881FB5576C00A31DF5 /* QuoteTableViewController.swift */; };
 		01BD4DE31FB3997500A67DCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD4DE21FB3997500A67DCD /* AppDelegate.swift */; };
 		01BD4DE51FB3997500A67DCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD4DE41FB3997500A67DCD /* ViewController.swift */; };
 		01BD4DE81FB3997500A67DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BD4DE61FB3997500A67DCD /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		01BBB0841FB543B900A31DF5 /* NewQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuoteViewController.swift; sourceTree = "<group>"; };
 		01BBB0861FB54CF900A31DF5 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		01BBB0881FB5576C00A31DF5 /* QuoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewController.swift; sourceTree = "<group>"; };
 		01BD4DDF1FB3997500A67DCD /* QuotePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BD4DE21FB3997500A67DCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01BD4DE41FB3997500A67DCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				01BD4DE41FB3997500A67DCD /* ViewController.swift */,
 				01BBB0861FB54CF900A31DF5 /* APIServices.swift */,
 				01BD4E1C1FB3EA9B00A67DCD /* RealmObjects.swift */,
+				01BBB0881FB5576C00A31DF5 /* QuoteTableViewController.swift */,
 				01BBB0841FB543B900A31DF5 /* NewQuoteViewController.swift */,
 				01BD4DE61FB3997500A67DCD /* Main.storyboard */,
 				01BD4E201FB403E700A67DCD /* QuoteView.xib */,
@@ -239,6 +242,7 @@
 			files = (
 				01BD4E1D1FB3EA9B00A67DCD /* RealmObjects.swift in Sources */,
 				01BBB0851FB543B900A31DF5 /* NewQuoteViewController.swift in Sources */,
+				01BBB0891FB5576C00A31DF5 /* QuoteTableViewController.swift in Sources */,
 				01BBB0871FB54CF900A31DF5 /* APIServices.swift in Sources */,
 				01BD4DE51FB3997500A67DCD /* ViewController.swift in Sources */,
 				01BD4DE31FB3997500A67DCD /* AppDelegate.swift in Sources */,
