@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import RealmSwift
+import Nuke
 
 class ViewController: UIViewController {
     
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
         quote.author = "Me"
         quote.quoteText = "FML"
         
-        let imageData = try! Data.init(contentsOf: URL(string: "https://lorempixel.com/400/200/")!)
+        let imageData = try! Data.init(contentsOf: URL(string: "https://lorempixel.com/400/300/")!)
         quote.photoData = imageData
 
         try! self.realm.write {
